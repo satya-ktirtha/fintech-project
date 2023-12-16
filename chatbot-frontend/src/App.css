@@ -1,0 +1,90 @@
+#root {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    /*background: green;*/
+}
+
+.container {
+    width: fit-content;
+    height: fit-content;
+    /*background: blue;*/
+    margin: auto;
+    padding: 0;
+}
+
+#chatarea::-webkit-scrollbar {
+    display:none;
+}
+
+#chatarea {
+    width: 100%;
+    height: 700px;
+    /*background:red;*/
+    overflow-y: scroll;
+}
+
+#chatbox {
+    width: 500px;
+    min-height: 20px;
+    height: fit-content;
+    max-height: 30px;
+    resize: none;
+    border: none;
+    outline: none;
+    word-wrap: break-word;
+    font-size: 15px;
+    overflow: hidden;
+    border-radius: 10px 0px 0px 10px;
+    padding-top: 13px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#userChat {
+    width: 100%;
+    height: fit-content;
+    /*background: cyan;*/
+    margin-bottom: 1rem;
+}
+
+.bubble {
+    width: fit-content;
+    max-width: 200px;
+    height: fit-content;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font: black;
+    background: gray;
+}
+
+.bubble.right {
+    margin-left: auto;
+    border-radius: 10px 10px 0px 10px;
+}
+
+.bubble.left {
+    margin-right: auto;
+    border-radius: 10px 10px 10px 0px;
+}
+
+#chat {
+    display: flex !important;
+    outline-style: solid;
+    outline-color: gray;
+    outline-width: 1px;
+    border-radius: 10px;
+}
+
+#sendButton {
+    width: 60px !important;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 0px 10px 10px 0px;
+}
